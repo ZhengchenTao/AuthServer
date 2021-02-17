@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  font-family: Helvetica, Verdana, 'Microsoft Yahei', sans-serif;
+}
+
+.ant-dropdown-menu {
+  padding: 0;
+}
+
+.ant-layout {
+  min-width: 900px;
+  background-color: white;
+}
+
+// TODO: MeControl should use Styled-Components instead after its version fixes the warning.
+.mectrl {
+  &-container {
+    padding: 5px 0;
+    width: 200px;
+    text-align: center;
+  }
+
+  &-info {
+    padding: 12px 12px 7px;
+
+    > .mectrl-text {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+        
+    > :nth-child(2) {
+      padding-top: 12px;
+      font-weight: 600;
+    }
+
+    > :last-child {
+      border-bottom: 1px solid gainsboro;
+      padding-bottom: 12px;
+    }
+  }
+}

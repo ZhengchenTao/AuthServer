@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="IdentityModel" Version="4.2.0" />
+    <PackageReference Include="MediatR" Version="8.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Authorization" Version="3.1.4" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.4" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="3.1.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Application\AuthServer.Application\AuthServer.Application.csproj" />
+    <ProjectReference Include="..\..\Domain\AuthServer.Enums\AuthServer.Enums.csproj" />
+  </ItemGroup>
+
+</Project>
